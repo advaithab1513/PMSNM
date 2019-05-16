@@ -1,0 +1,43 @@
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+ 
+  <appender name="console" class="org.apache.log4j.ConsoleAppender">
+    <param name="Target" value="System.out"/>
+    <layout class="org.apache.log4j.PatternLayout">
+    <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+    </layout>
+  </appender>
+ 
+  <appender name="FA" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="demoApplication.log"/>
+    <param name="Append" value="true"/>
+    <layout class="org.apache.log4j.PatternLayout">
+    <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+    </layout>
+  </appender>
+  
+  <appender name="FA1" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="demoApplication111.log"/>
+    <param name="Append" value="true"/>
+    <layout class="org.apache.log4j.PatternLayout">
+    <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+    </layout>
+  </appender>
+  
+<logger name="demo" additivity="false">
+	<level value="DEBUG" />
+	<appender-ref ref="FA1" />
+</logger>
+
+<logger name="demo1" additivity="false">
+	<level value="DEBUG" />
+	<appender-ref ref="FA" />
+</logger>
+
+<root>
+	<priority value="DEBUG" />
+	<appender-ref ref="FA1" />
+</root>
+ 
+ 
+</log4j:configuration>
