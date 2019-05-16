@@ -1,5 +1,5 @@
 package com.pm.test;
 
-public class HelloWorld {
+public class HelloWorl {
 
 }
