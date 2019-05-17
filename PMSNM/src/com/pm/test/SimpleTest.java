@@ -7,6 +7,6 @@ public class SimpleTest
 	@Test
 	public void main() 
 	{
-		System.out.println("Hell");
+		System.out.println("Hell0lll");
 	}
 }
