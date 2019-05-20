@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
 
 import com.pm.pageObjects.PM_Login_Page;
 import com.pm.pageObjects.PM_Main_Page;
