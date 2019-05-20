@@ -28,7 +28,6 @@ import com.pmsnm.Utilities.ExcelReadAndWrite;
 import com.pmsnm.Utilities.Login;
 import com.pmsnm.Utilities.ScreenShot;
 import com.pmsnm.Utilities.StoreAndRetreiveDataFromMap;
-import com.sun.xml.bind.v2.schemagen.xmlschema.List;
 
 public class BasePage implements AutoConstants
 {
